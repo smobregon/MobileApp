@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+      <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+   </head>
+   <body>
+      <div data-role = "page" id = "pageone">
+         <div data-role = "header">
+            <h1>Dorm Recipes</h1>
+         <!-- //navigation -->
+         <div data-role = "navbar">
+            <ul>
+               <li><a href = "index.html" >Home</a></li>
+               <li><a href = "recipes.html" >Feedback</a></li>
+               <li><a href = "search.html" class = "ui-btn-active">Recipes</a></li>
+            </ul>
+         </div>
+         </div>
+         <h3>Search for one of our recipes here.</h3>
+         <!-- filter-->
+         <form class = "ui-filterable">
+            <input id = "filterBasic-input" data-type = "search">
+         </form>
+         <ul data-role = "listview" data-filter = "true" data-input = "#filterBasic-input">
+            <li>Mac n' Cheese</li>
+            <li>French Toast</li>
+            <li>Sandwich</li>
+            <li>Popcorn</li>
+            <li>Waffle</li>
+            <li>Omlet</li>
+            <li>Pizza</li>
+         </ul>
+         <div data-role = "footer">
+            <h1>Web Development II (IT 3223)</h1>
+         </div>
+      </div>
+   </body>
+</html>

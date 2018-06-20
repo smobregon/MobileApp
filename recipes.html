@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+      <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+      <script src = "feedback.js"></script>
+   </head>
+   <body>
+      <div data-role = "page" id = "pageone">
+         <div data-role = "header">
+            <h1>Dorm Recipes</h1>
+         <!-- //navigation -->
+            <div data-role = "navbar">
+               <ul>
+                  <li><a href = "index.html" >Home</a></li>
+                  <li><a href = "recipes.html" class = "ui-btn-active">Feedback</a></li>
+                  <li><a href = "search.html">Recipes</a></li>
+               </ul>
+            </div>
+         </div>
+         <!--popup-->
+         <div data-role = "main" class = "ui-content">
+            <a href = "#popup_example" data-rel = "popup" class = "ui-btn ui-btn-inline">Click here to see popup</a>
+            <div data-role = "popup" id = "popup_example">
+               <p>Welcome to Dorm Recipes...keep studying after your snack!</p>
+            </div>
+         
+         <!---Panel-->
+         <div data-role = "panel" id = "panel1">
+            <h2>Cooking Tips!</h2>
+            <p>Make sure you buy all the necessary utensils first.</p>
+            <p>Trader Joe's has great deals on ingredients!</p>
+            <p>Clean all your dishes before using them again.</p>
+            <p>Double recipes to make extra and keep for the next day!</p>
+         </div>
+         <div data-role  =  "main" class  =  "ui-content">
+            <p>Click here for secret Cooking Tips!</p>
+            <a href = "#panel1" class = "ui-btn ui-btn-inline">Open Cooking Tips</a>
+         </div>
+         <!--flipswitch-->
+         <form>
+            <h2>Give us your feedback!</h2>
+            <h3>Do you like our recipes?</h3>
+            <input type = "checkbox" data-role = "flipswitch" data-on-text = "Yes" data-off-text = "No" data-wrapper-class = "custom-size-flipswitch" />
+            <h3>Is our website easy to navigate?</h3>
+            <input type = "checkbox" data-role = "flipswitch" data-on-text = "Yes" data-off-text = "No" data-wrapper-class = "custom-size-flipswitch" />
+            <h3>Would you recommend this site to your friends?</h3>
+            <input type = "checkbox" data-role = "flipswitch" data-on-text = "Yes" data-off-text = "No" data-wrapper-class = "custom-size-flipswitch" />
+            <label for = "slider1">How many times do you cook a week?</label>
+            <input type = "range" name = "slider1" id = "slider1" data-highlight = "true" min = "0" max = "30" value = "15">
+            <label for = "slider1">How often do you use our recipes a week?</label>
+            <input type = "range" name = "slider1" id = "slider1" data-highlight = "true" min = "0" max = "30" value = "15"><br>
+            <a href = "feedback.html"><input type="submit" data-inline="true" value="Submit" data-theme="b"></a>
+         </form>
+         <div data-role = "footer">
+            <h1>Web Development II (IT 3223)</h1>
+         </div>
+         </div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+      <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+   </head>
+   <body>
+      <div data-role = "page" id = "pageone">
+         <div data-role = "header">
+            <h1>Dorm Recipes</h1>
+            <!-- //navigation -->
+            <div data-role = "navbar">
+               <ul>
+                  <li><a href = "index.html" class = "ui-btn-active"data-prefetch = "true" data-transition = "flip" >Home</a></li>
+                  <li><a href = "recipes.html" data-prefetch = "true" data-transition = "fade">Feedback</a></li>
+                  <li><a href = "search.html" data-prefetch = "true" data-transition = "slide">Recipes</a></li>   
+               </ul>
+            </div>
+         </div>
+         <!-- body -->
+         <div data-role = "main" class = "ui-content">
+            <p>Welcome to Dorm Recipes!</p>
+            <p>We know that creating your own kitchen masterpieces is hard in college. That is why we put together the quickest, easiest and tastiest recipes for you to make in your dorm room!</p>
+            <!-- //table -->
+            <table data-role = "table" id = "table-column-toggle" data-mode = "columntoggle" class = "ui-responsive table-stripe" data-column-btn-theme = "b" data-column-btn-text = "Click here to display columns...">
+            <thead>
+               <tr>
+                  <th data-priority = "1">Cooking Time</th>
+                  <th>Recipe</th>
+                  <th data-priority = "2">Easiest</th>
+                  <th data-priority = "3">Fastest</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <th>10 minutes</th>
+                  <td>Mac n' Cheese</td>
+                  <td>Super Easy!</td>
+                  <td>Super Fast!</td>
+               </tr>
+               <tr>
+                  <th>20 minutes</th>
+                  <td>French Toast</td>
+                  <td>A little tricky.</td>
+                  <td>Not so quick.</td>
+               </tr>
+               <tr>
+                  <th>3 minutes</th>
+                  <td>Sandwich</td>
+                  <td>Super easy!</td>
+                  <td>Super Fast!</td>
+               </tr>
+               <tr>
+                  <th>4 minutes</th>
+                  <td>Popcorn</td>
+                  <td>Super easy!</td>
+                  <td>Very fast!</td>
+               </tr>
+               <tr>
+                  <th>15 minutes</th>
+                  <td>Waffle</td>
+                  <td>Pretty easy.</td>
+                  <td>Not so quick.</td>
+               </tr>
+               <tr>
+                  <th>15 minutes</th>
+                  <td>Omlet</td>
+                  <td>A little tricky.</td>
+                  <td>Not so quick.</td>
+               </tr>
+               <tr>
+                  <th>25 minutes</th>
+                  <td>Pizza</td>
+                  <td>A little tricky.</td>
+                  <td>Takes a little longer.</td>
+               </tr>
+            </tbody>
+            </table>
+            <div data-role = "main" class = "ui-content">
+               <a href = "search.html" class = "ui-btn ui-corner-all">Click here for easy Recipes!</a>
+            </div>
+         </div>
+         <div data-role = "footer">
+            <h3>Savannah Obregon</h3>
+         </div>
+      </div>
+   </body>
+</html>
